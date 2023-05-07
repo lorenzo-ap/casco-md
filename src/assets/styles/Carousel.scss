@@ -1,0 +1,40 @@
+.carousel {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: #000;
+    transition: transform .2s ease;
+
+    &::after {
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &:active {
+      transform: scale(.95);
+    }
+  }
+
+  .swiper-button-next {
+    right: 40px;
+  }
+
+  .swiper-button-prev {
+    left: 40px;
+  }
+
+  .swiper-horizontal {
+    &>.swiper-pagination {
+      bottom: 12px;
+    }
+  }
+
+}
