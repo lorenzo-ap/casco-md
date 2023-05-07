@@ -2,11 +2,12 @@ import CarteVerde from 'pages/CarteVerde';
 import Casco from 'pages/Casco';
 import NotFound from 'pages/NotFound';
 import RCA from 'pages/RCA';
+import { FC } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home';
 import RootLayout from './RootLayout';
 
-const Router = () => {
+const Router: FC = () => {
   return (
     <BrowserRouter>
       <Routes>

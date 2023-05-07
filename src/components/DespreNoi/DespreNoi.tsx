@@ -1,4 +1,6 @@
-const DespreNoi = () => {
+import { FC } from 'react';
+
+const DespreNoi: FC = () => {
   return (
     <section className="mb-28 ">
       <div className="container">

@@ -1,8 +1,9 @@
 import Footer from 'components/Footer/Footer';
 import Header from 'components/Header/Header';
+import { FC } from 'react';
 import { Outlet } from 'react-router-dom';
 
-const RootLayout = () => {
+const RootLayout: FC = () => {
   return (
     <>
       <Header />

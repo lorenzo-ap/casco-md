@@ -1,10 +1,11 @@
+import { FC } from 'react';
 import { Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '../../assets/styles/RecenziiCarousel.scss';
 
-const Recenzii = () => {
+const Recenzii: FC = () => {
   return (
     <section className="recenzii">
       <div className="bg-[#338588] py-14">

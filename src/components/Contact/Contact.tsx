@@ -1,4 +1,6 @@
-const Contact = () => {
+import { FC } from 'react';
+
+const Contact: FC = () => {
   return (
     <section>
       <div className="container">

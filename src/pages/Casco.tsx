@@ -1,9 +1,10 @@
 import Input from 'components/Input/Input';
 import InputCheckBox from 'components/Input/InputCheckBox';
 import InputSelect from 'components/Input/InputSelect';
+import { FC } from 'react';
 import { FiShoppingCart } from 'react-icons/fi';
 
-const Casco = () => {
+const Casco: FC = () => {
   return (
     <div className="container">
       <div className="pb-20">
@@ -39,7 +40,7 @@ const Casco = () => {
             <span>Livrare gratuită</span>
           </div>
 
-          <div>
+          <div className="flex flex-col gap-y-3">
             <InputCheckBox name="Accept „Termenii şi Condiţiile“" id="termeniSiConditii" />
             <InputCheckBox name="Accept „Prelucrarea datelor cu caracter personal.“" id="prelucrareaDatelor" />
           </div>
