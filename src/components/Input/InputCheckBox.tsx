@@ -1,7 +1,6 @@
 import { IInputProps } from 'types/input.interface';
-import { FC } from 'react';
 
-const Input: FC<IInputProps> = ({ name, id }) => {
+const Input = ({ name, id }: IInputProps) => {
   return (
     <div className="checkbox-wrapper flex gap-x-1">
       <input id={id} type="checkbox" />

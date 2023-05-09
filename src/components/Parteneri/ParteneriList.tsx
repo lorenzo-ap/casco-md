@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import ParteneriItem from './ParteneriItem';
 
 const fakeData = [
@@ -34,7 +33,7 @@ const fakeData = [
   },
 ];
 
-const ParteneriList: FC = () => {
+const ParteneriList = () => {
   return (
     <div className="grid grid-cols-3 gap-8">
       {fakeData.map((partener) => (

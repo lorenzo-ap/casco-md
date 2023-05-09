@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import { Autoplay, Navigation, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -12,7 +11,7 @@ const images: string[] = [
   'https://www.bankrate.com/2021/07/08145135/car-how-to-read-insurance-policy-featured.jpg?auto=webp&optimize=high&crop=16:9',
 ];
 
-const Carousel: FC = () => {
+const Carousel = () => {
   return (
     <div className="carousel mb-20">
       <Swiper

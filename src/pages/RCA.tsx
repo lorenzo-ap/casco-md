@@ -1,6 +1,4 @@
-import { FC } from "react";
-
-const RCA: FC = () => {
+const RCA = () => {
   return <div className="container h-screen">RCA</div>;
 };
 

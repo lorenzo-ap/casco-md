@@ -1,9 +1,8 @@
-import { FC } from 'react';
 import { BsInstagram, BsWhatsapp } from 'react-icons/bs';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-const Footer: FC = () => {
+const Footer = () => {
   return (
     <footer className="bg-[#072227] text-white">
       <div className="container">

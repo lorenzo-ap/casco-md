@@ -1,7 +1,6 @@
-import { FC } from 'react';
 import { IParteneriItemProps } from 'types/parteneri.interface';
 
-const ParteneriItem: FC<IParteneriItemProps> = ({ name, image }) => {
+const ParteneriItem = ({ name, image }: IParteneriItemProps) => {
   return (
     <div className="flex flex-col justify-between items-center h-100 border rounded-md py-10">
       <div className="bg-[#a4a4a4] h-52 w-full mb-10">

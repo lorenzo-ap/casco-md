@@ -1,10 +1,9 @@
 import Input from 'components/Input/Input';
 import InputCheckBox from 'components/Input/InputCheckBox';
 import InputSelect from 'components/Input/InputSelect';
-import { FC } from 'react';
 import { FiShoppingCart } from 'react-icons/fi';
 
-const Casco: FC = () => {
+const Casco = () => {
   return (
     <div className="container">
       <div className="pb-20">

@@ -1,7 +1,6 @@
-import { FC } from 'react';
 import ParteneriList from './ParteneriList';
 
-const Parteneri: FC = () => {
+const Parteneri = () => {
   return (
     <section className="mb-28">
       <div className="container">

@@ -1,7 +1,6 @@
-import { FC } from 'react';
 import Carousel from './Carousel';
 
-const Promo: FC = () => {
+const Promo = () => {
   return (
     <div className="container">
       <div className="mb-28">

@@ -1,12 +1,12 @@
 import Input from 'components/Input/Input';
 import Popup from 'components/Popup/Popup';
 import PopupForm from 'components/Popup/PopupForm';
-import { FC, useState } from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Navigation from './Navigation';
 
-const Header: FC = () => {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
+const Header = () => {
+  const [isPopupOpened, setIsPopupOpened] = useState(false);
   const location = useLocation();
 
   return (
@@ -18,23 +18,23 @@ const Header: FC = () => {
               Casco.md
             </Link>
             <Navigation location={location} />
-            <button onClick={() => setIsPopupOpen((prev) => !prev)} className="button" type="button">
+            <button onClick={() => setIsPopupOpened((prev) => !prev)} className="button" type="button">
               Autentificare
             </button>
           </div>
         </div>
       </header>
-      <AuthPopup isOpen={isPopupOpen} setIsOpen={setIsPopupOpen} />
+      <AuthPopup isOpened={isPopupOpened} setIsOpen={setIsPopupOpened} />
     </>
   );
 };
 
 interface IAuthProps {
-  isOpen: boolean;
+  isOpened: boolean;
   setIsOpen: (value: boolean) => void;
 }
 
-const AuthPopup = ({ isOpen, setIsOpen }: IAuthProps) => {
+const AuthPopup = ({ isOpened, setIsOpen }: IAuthProps) => {
   const [isLoginForm, setIsLoginForm] = useState(true);
 
   const closePopup = () => {
@@ -45,15 +45,15 @@ const AuthPopup = ({ isOpen, setIsOpen }: IAuthProps) => {
   };
 
   return (
-    <Popup isOpen={isOpen} onClose={closePopup}>
+    <Popup isOpened={isOpened} onClose={closePopup}>
       {isLoginForm ? (
-        <PopupForm title="Autentificare" setIsLoginForm={setIsLoginForm}>
+        <PopupForm title="Autentificare" link="Inregistreazate" setIsLoginForm={setIsLoginForm}>
           <Input name="Username" id="username" />
           <Input name="Parola" id="parola" />
           <button className="button mt-2">Intra</button>
         </PopupForm>
       ) : (
-        <PopupForm title="Inregistrare" setIsLoginForm={setIsLoginForm}>
+        <PopupForm title="Inregistrare" link="Login" setIsLoginForm={setIsLoginForm}>
           <Input name="Username" id="username" />
           <Input name="Email" id="email" />
           <Input name="Parola" id="parola" />

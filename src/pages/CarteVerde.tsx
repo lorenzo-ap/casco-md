@@ -1,6 +1,4 @@
-import { FC } from 'react';
-
-const CarteVerde: FC = () => {
+const CarteVerde = () => {
   return <div className="container h-screen">Carte verde</div>;
 };
 

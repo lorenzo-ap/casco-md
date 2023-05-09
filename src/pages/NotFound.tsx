@@ -1,6 +1,4 @@
-import { FC } from 'react';
-
-const NotFound: FC = () => {
+const NotFound = () => {
   return <div className="text-5xl text-center mt-20">The page was not found</div>;
 };
 

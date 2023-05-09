@@ -1,7 +1,6 @@
 import { IInputSelectProps } from 'types/input.interface';
-import { FC } from 'react';
 
-const InputSelect: FC<IInputSelectProps> = ({ name, id, options, optionsValues }) => {
+const InputSelect = ({ name, id, options, optionsValues }: IInputSelectProps) => {
   return (
     <div className="flex flex-col w-full">
       <label className="mb-1" htmlFor={id}>
