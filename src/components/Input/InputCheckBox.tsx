@@ -1,4 +1,4 @@
-import { IInputProps } from 'interfaces/interfaces';
+import { IInputProps } from 'types/input.interface';
 import { FC } from 'react';
 
 const Input: FC<IInputProps> = ({ name, id }) => {

@@ -11,13 +11,13 @@ const Footer: FC = () => {
           <div className="flex flex-col items-center gap-y-5">
             <div className="flex justify-between gap-x-8">
               <a href="!#">
-                <BsInstagram size={40} className="hover:text-[var(--main-color)] transition-colors" />
+                <BsInstagram size={40} className="hover:text-[] transition-colors" />
               </a>
               <a href="!#">
-                <FaFacebookSquare size={40} className="hover:text-[var(--main-color)] transition-colors" />
+                <FaFacebookSquare size={40} className="hover:text-[] transition-colors" />
               </a>
               <a href="!#">
-                <BsWhatsapp size={40} className="hover:text-[var(--main-color)] transition-colors" />
+                <BsWhatsapp size={40} className="hover:text-[] transition-colors" />
               </a>
             </div>
             <a className="text-2xl footer-link transition-colors" href="tel:+37360944111">

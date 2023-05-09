@@ -1,4 +1,4 @@
-import { IInputSelectProps } from 'interfaces/interfaces';
+import { IInputSelectProps } from 'types/input.interface';
 import { FC } from 'react';
 
 const InputSelect: FC<IInputSelectProps> = ({ name, id, options, optionsValues }) => {

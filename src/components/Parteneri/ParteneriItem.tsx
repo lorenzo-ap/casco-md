@@ -1,5 +1,5 @@
-import { IParteneriItemProps } from 'interfaces/interfaces';
 import { FC } from 'react';
+import { IParteneriItemProps } from 'types/parteneri.interface';
 
 const ParteneriItem: FC<IParteneriItemProps> = ({ name, image }) => {
   return (
